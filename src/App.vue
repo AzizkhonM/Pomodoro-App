@@ -79,12 +79,12 @@ const BlindLights = () => {
             <div class="timer">
                 <div class="status text-[24px]"><i class='bx bx-brain'></i> STATUS</div>
                 <div class="numbers">
-                    <h1 :class="isDark ? 'dark' : ''" class="text-center" v-if="minute < 10">0{{ minute }}</h1>
-                    <h1 :class="isDark ? 'dark' : ''" class="text-center" v-else> {{ minute }}</h1>
-                    <h1 :class="isDark ? 'dark' : ''" class="text-center" v-if="end < 10">0{{ end }}</h1>
-                    <h1 :class="isDark ? 'dark' : ''" class="text-center" v-else>{{ end }}</h1>
+                    <h1 :class="isDark ? 'dark' : ''" class="text-center text-[200px] md:text-[256px] leading-[170px] md:leading-[217px]" v-if="minute < 10">0{{ minute }}</h1>
+                    <h1 :class="isDark ? 'dark' : ''" class="text-center text-[200px] md:text-[256px] leading-[170px] md:leading-[217px]" v-else> {{ minute }}</h1>
+                    <h1 :class="isDark ? 'dark' : ''" class="text-center text-[200px] md:text-[256px] leading-[170px] md:leading-[217px]" v-if="end < 10">0{{ end }}</h1>
+                    <h1 :class="isDark ? 'dark' : ''" class="text-center text-[200px] md:text-[256px] leading-[170px] md:leading-[217px]" v-else>{{ end }}</h1>
                 </div>
-                <div class="controls gap-5 flex text-4xl">
+                <div class="controls gap-3 flex text-4xl">
                     <button class="p-[24px] rounded-[24px] duration-150 flex justify-center items-center bg-[#e4f9e9]"><i
                             class='bx bx-dots-horizontal-rounded'></i></button>
                     <button @click="start"
@@ -104,8 +104,8 @@ const BlindLights = () => {
 
 <style lang="scss" scoped>
 .numbers h1 {
-    font-size: 256px;
-    line-height: 217px;
+/*     font-size: 256px; */
+/*     line-height: 217px; */
     font-weight: 800;
     color: #14401D
 }
