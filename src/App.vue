@@ -24,7 +24,7 @@ const start = function () {
                     clearInterval(timer.value)
                     setTimeout(() => {
                         start()
-                    }, 7000)
+                    }, 2000)
                 } else {
                     minute.value = 0
                     end.value = 10
