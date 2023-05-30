@@ -33,7 +33,7 @@ const start = function () {
                     clearInterval(timer.value)
                     setTimeout(() => {
                         start()
-                    }, 2000)
+                    }, 7000)
                 }
             } else {
                 end.value = end.value - 1
